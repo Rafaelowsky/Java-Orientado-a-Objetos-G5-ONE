@@ -9,16 +9,16 @@ public class TestConversion {
 		//para pasarla a entero y poder compilar
 		double salario = 1270.50;
 		int valor = (int) salario;
-		System.out.print(valor);
+		System.out.println(valor);
 		
 		//Aqui es la muestra de que double no siempre es la mejor opción
 		double valor1 = 0.2;
 		double valor2 = 0.1;
 		double total = valor1 + valor2;
-		System.out.print(total);
+		System.out.println(total);
 		
 		//Esta es la prueba de que con el cast podemos hacer nuestro codigo funcione
-		System.out.print(puntoFlotante);
+		System.out.println(puntoFlotante);
 		
 	}
 }
