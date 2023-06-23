@@ -3,7 +3,7 @@
 		double saldo;
 		int agencia;
 		int numero;
-		String titular;
+		Cliente titular;
 	
 		//Con esto podemos crear una función como si de JavaScript se tratase
 		//No retorna valor (void) 
