@@ -2,12 +2,12 @@
 public class PruebaMetodos {
 	public static void main(String[] args) {
 		Cuenta miCuenta = new Cuenta();
-		miCuenta.saldo = 200;
+		miCuenta.setSaldo(200);
 		miCuenta.depositar(300);
-		System.out.println(miCuenta.saldo);
+		System.out.println(miCuenta.getSaldo());
 		
 		miCuenta.retirar(100);
-		System.out.println(miCuenta.saldo);
+		System.out.println(miCuenta.getSaldo());
 		
 		Cuenta cuentaJimena = new Cuenta ();
 		cuentaJimena.depositar(1000);
@@ -17,7 +17,7 @@ public class PruebaMetodos {
 		} else { System.out.println("Imposible de realizar"); 
 		
 		}
-		System.out.println(cuentaJimena.saldo);
-		System.out.println(miCuenta.saldo);
+		System.out.println(cuentaJimena.getSaldo());
+		System.out.println(miCuenta.getSaldo());
 	}
 }

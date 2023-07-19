@@ -6,14 +6,14 @@ public class CrearCuenta {
 		//Variable       ->      Valor
 		//Variable       ->     12384DA
 		Cuenta primeraCuenta = new Cuenta();
-		primeraCuenta.saldo = 1000;
-		System.out.println(primeraCuenta.saldo);
+		primeraCuenta.setSaldo(1000);
+		System.out.println(primeraCuenta.getSaldo());
 		
 		Cuenta segundaCuenta = new Cuenta();
-		segundaCuenta.saldo = 500;
-		System.out.println(segundaCuenta.saldo);
+		segundaCuenta.setSaldo(500);
+		System.out.println(segundaCuenta.getSaldo());
 		
-		primeraCuenta.saldo = 500;
+		primeraCuenta.setSaldo(500);
 		//Con esto podemos ver que ID's tienen los objetos
 		System.out.println(primeraCuenta);
 		System.out.println(segundaCuenta);
@@ -28,7 +28,7 @@ public class CrearCuenta {
 		
 		//Y aunque tengan diferentes atributos pero pueden contener
 		//los mismos atributos independientes entre si
-		if (primeraCuenta.saldo == segundaCuenta.saldo) {
+		if (primeraCuenta.getSaldo() == segundaCuenta.getSaldo()) {
 			System.out.println("Tienen los mismos atributos");
 		} else {
 			System.out.println("No tienen los mismos atributos");
