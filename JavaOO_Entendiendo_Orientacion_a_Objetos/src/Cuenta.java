@@ -1,8 +1,8 @@
      //Nuestro objeto será Cuenta
 	class Cuenta {
-		double saldo;
-		int agencia;
-		int numero;
+		private double saldo;
+		private int agencia;
+		private int numero;
 		Cliente titular = new Cliente();
 	
 		//Con esto podemos crear una función como si de JavaScript se tratase
@@ -33,13 +33,35 @@
 			}
 		}
 		
-		/*
-		 Si es que necesitaramos obtener el saldo si es que este esta en private
-		 lo podemos hacer con el siguiente método y así queda protegido
-		 
-		public double obtenerSaldo () {
+		//Con este método podemos obtener el valor de una variable privada de esta clase
+		public double getSaldo () {
 			return this.saldo;
+	
 		}
-		*/
 		
+		public int getAgencia () {
+			return this.agencia;
+		}
+		
+		public int getNumero () {
+			return this.numero;
+		}
+		
+		//Con este método podemos modificar un atributo de la clase aun siendo privada
+		public void setSaldo (double saldo) {
+			this.saldo = saldo;
+		}
+		
+		public void setAgencia(int agencia) {
+			if (agencia < 0) {
+			this.agencia = agencia;
+		}
+			else {
+				System.out.println("No existen agencias con números negativos");
+			}
+		}
+		
+		public void setNumero(int numero) {
+			this.numero = numero;
+		}
 	}
