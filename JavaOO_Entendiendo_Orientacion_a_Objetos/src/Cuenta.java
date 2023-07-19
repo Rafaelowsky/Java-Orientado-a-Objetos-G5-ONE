@@ -32,4 +32,14 @@
 				return false;
 			}
 		}
+		
+		/*
+		 Si es que necesitaramos obtener el saldo si es que este esta en private
+		 lo podemos hacer con el siguiente método y así queda protegido
+		 
+		public double obtenerSaldo () {
+			return this.saldo;
+		}
+		*/
+		
 	}
